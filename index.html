@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ромка</title>
+     <link rel="icon" href="favicon.ico">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Matrix rain effect -->
+    <canvas id="matrix" class="matrix-rain"></canvas>
+    
+    <header>
+        <div class="header-content">
+            <h1 class="glitch" data-text="Рома Рома Рома">Рома</h1>
+            <p class="subtitle">Рома Банделиков 2008</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="nav-container">
+            <a href="#about">О НЕМ</a>
+            <a href="#memories">ВОСПОМИНАНИЯ</a>
+            <a href="gallery.html">ГАЛЕРЕЯ</a>
+            <a href="#video-arh">ВИДЕО-АРХИВ</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <section id="about" class="memorial-section">
+            <h2>// О РОМКЕ</h2>
+            <div class="memorial-content">
+                <div class="memorial-text">
+                    <p>>_ Рома Банделиков известный всем как Icekroco, был не просто топовым человеком. 
+Он был тем самым основателем Rubick-Shadow Fiend этот человек
+чье теплое, уютное присутствие создавало неповторимую атмосферу добра и спокойствия.</p><br>
+<p>> _Этот человек не как все нам известные - это уникальнейший человек, который помогает каждому, 
+кто нуждается в помощи. Рома может поднять настроение людям даже своей улыбкой. Он всегда идет против того, что ему навязывает общество</p><br>
+<p>> _Он лучший из лучших…</p>
+             
+                </div>
+                <div class="memorial-image">
+                    <img src="img/photo_2025-09-12_17-26-40.jpg" alt="Фото стримера">
+                </div>
+            </div>
+        </section>
+
+        <section id="tribute-gif" class="memorial-section">
+            <h2>// ТРИБУТ</h2>
+            <div class="memorial-content">
+                <div class="memorial-text">
+                    <p>>_ ЧОТКИЙ ПАЦАН ЖИЕСТЬ</p>
+                    <p>>_ НА ЭТОМ САЙТЕ ЖИВЕТ САМА ЧАСТИЧКА.</p>
+                </div>
+                <div class="memorial-image">
+                    <img class="no-filter" src="img/IMG_7355 (online-video-cutter.com).gif" alt="Анимированный трибут">
+                </div>
+            </div>
+        </section>
+      
+        </section>
+        
+        <section id="memories" class="memorial-section">
+            <h2>// ВОСПОМИНАНИЯ ИЗ МАТРИЦЫ</h2>
+            <p>>_ ОТЗЫВЫ КОЛЛЕГ О НЕМ.</p>
+            
+            <div class="reviews-grid">
+                <!-- Отзыв 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://upload.wikimedia.org/wikipedia/ru/d/d9/Smit.jpg" alt="Аватар" class="review-avatar">
+                        <div>
+                            <div class="review-author">Арсен</div>
+                            <div class="review-date">2025-11-11 22:08</div>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <div class="review-message">
+Рома является отличным примером человека который может найти общий язык со всеми, смышленный, очень нравится с ним рофланить над кем то или чем то, хороший сап в доте
+                        </div>
+                    </div>
+                    <div class="review-rating">★★★★★</div>
+                    <div class="review-stats">
+                        <div class="review-likes">
+                            <button class="like-btn" onclick="likeReview(1)">❤</button>
+                            <span class="like-count" id="likes-1">47</span>
+                        </div>
+                        <span class="corrupted-text">Близкий</span>
+                    </div>
+                </div>
+
+                <!-- Отзыв 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://news.store.rambler.ru/img/849799f0eeb02dc6f748d98b34ed89a2?img-format=auto&img-1-resize=height:400,fit:max&img-2-filter=sharpen" alt="Аватар" class="review-avatar">
+                        <div>
+                            <div class="review-author">Валера</div>
+                            <div class="review-date">2025-11-11 22:08</div>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <div class="review-message">
+Кароче для меня роман просто легенда нашего времени, типок универсален и умеет общаться со всеми, это оч круто, всегда с ним весело ебать рому люблю
+                        </div>
+                    </div>
+                    <div class="review-rating">★★★★★</div>
+                    <div class="review-stats">
+                        <div class="review-likes">
+                            <button class="like-btn" onclick="likeReview(2)">❤</button>
+                            <span class="like-count" id="likes-2">33</span>
+                        </div>
+                        <span class="corrupted-text">Близкий</span>
+                    </div>
+                </div>
+
+                <!-- Отзыв 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://habrastorage.org/files/c33/634/e3f/c33634e3fddf4a2395a937a19fadf4cc.jpg" alt="Аватар" class="review-avatar">
+                        <div>
+                            <div class="review-author">Егор</div>
+                            <div class="review-date">2025-11-11 22:08</div>
+                        </div>
+                        
+                    </div>
+                    <div class="review-content">
+                        <div class="review-message">
+                      Проведя небольшую исследовательскую работу, я со всей уверенностью и ответственностью за свои слова могу заявить: Банделиков Роман несомненно является ярким примером выраженной степени аутизма и синдрома дауна с довольно сильными отклонениями (рома не пизди пж), сверх того у объекта РБ (роман банделиков) наблюдаются повышенные вспышки долбоебизма и крайней степени неадекватности. Из этого можно сделать вывод: РБ не лучший выбор для адекватного общения, никому не рекомендую связываться с этим индивидом
+                        </div>
+                    </div>
+                    <div class="review-rating">★★★★★</div>
+                    <div class="review-stats">
+                        <div class="review-likes">
+                            <button class="like-btn" onclick="likeReview(3)">❤</button>
+                            <span class="like-count" id="likes-3">89</span>
+                        </div>
+                        <span class="corrupted-text">Близкий</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+         <section id="video-archive" class="memorial-section">
+        <h2>// ВИДЕО-АРХИВ: СИСТЕМНЫЙ ПРОСМОТР</h2>
+        <p>>_ ЗАПУСК ЦИФРОВЫХ ЗАПИСЕЙ ИЗ АРХИВА ПАМЯТИ</p>
+        
+        <!-- Система выбора видео -->
+        <div class="video-selector">
+            <div class="selector-header">
+                >_ ВЫБЕРИТЕ ВИДЕОФАЙЛ ДЛЯ ВОСПРОИЗВЕДЕНИЯ
+            </div>
+            
+            <div class="video-list">
+                <div class="video-item active" data-video="resources/videos/v1.mp4" data-poster="resources/videos/cover1.png" data-duration="00:10">
+                    <img src="img/Снимок экрана 2025-11-11 211455.png" class="video-thumb" alt="Походка чина">
+                    <div class="video-info">
+                        <div class="video-name">Походка чина</div>
+                        <div class="video-duration">00:34 | 9,87MB</div>
+                    </div>
+                </div>
+                
+                <div class="video-item" data-video="resources/videos/v2.mp4" data-poster="resources/videos/cover2.png" data-duration="00:31">
+                    <img src="img/Снимок экрана 2025-11-11 211819.png" class="video-thumb" alt="Стесняшка">
+                    <div class="video-info">
+                        <div class="video-name">Стесняшка</div>
+                        <div class="video-duration">00:31 | 1,56MB</div>
+                    </div>
+                </div>
+                
+                <div class="video-item" data-video="resources/videos/v3.mp4" data-poster="resources/videos/cover3.png" data-duration="0:11">
+                    <img src="img/Снимок экрана 2025-11-11 223503.png" class="video-thumb" alt="День рождение Валерки">
+                    <div class="video-info">
+                        <div class="video-name">День рождение Валерки</div>
+                        <div class="video-duration">00:11 | 4,15MB</div>
+                    </div>
+                </div>
+
+                <div class="video-item" data-video="resources/videos/v4.mp4" data-poster="resources/videos/cover4.png" data-duration="0:18">
+                    <img src="img/Снимок экрана 2025-11-11 221914.png" class="video-thumb" alt="Один черный русский мальчик">
+                    <div class="video-info">
+                        <div class="video-name">Один черный русский мальчик</div>
+                        <div class="video-duration">00:18 | 7,25MB</div>
+                    </div>
+                </div>
+
+                <div class="video-item" data-video="resources/videos/v5.mp4" data-poster="resources/videos/cover5.png" data-duration="0:25">
+                    <img src="img/Снимок экрана 2025-11-11 221909.png" class="video-thumb" alt="Оу май ти пуш">
+                    <div class="video-info">
+                        <div class="video-name">Оу май ти пуш</div>
+                        <div class="video-duration">00:25 | 0,69MB</div>
+                    </div>
+                </div>
+                
+                <div class="video-item" data-video="resources/videos/v6.mp4" data-poster="resources/videos/cover6.png" data-duration="00:29">
+                    <img src="img/Снимок экрана 2025-11-11 221845.png" class="video-thumb" alt="Номально">
+                    <div class="video-info">
+                        <div class="video-name">Номально</div>
+                        <div class="video-duration">00:29 | 2,66MB</div>
+                    </div>
+                </div>
+
+                <div class="video-item" data-video="resources/videos/v7.mp4" data-poster="resources/videos/cover7.png" data-duration="00:20">
+                    <img src="img/Снимок экрана 2025-11-11 221837.png" class="video-thumb" alt="Ой ой ой ой">
+                    <div class="video-info">
+                        <div class="video-name">Ой ой ой ой</div>
+                        <div class="video-duration">00:20 | 1,66MB</div>
+                    </div>
+                </div>
+
+                <div class="video-item" data-video="resources/videos/v8.mp4" data-poster="resources/videos/cover8.png" data-duration="00:25">
+                    <img src="img/Снимок экрана 2025-11-11 221828.png" class="video-thumb" alt="Кексик">
+                    <div class="video-info">
+                        <div class="video-name">Кексик</div>
+                        <div class="video-duration">00:25 | 18,8MB</div>
+                    </div>
+                </div>
+
+                <div class="video-item" data-video="resources/videos/v9.mp4" data-poster="resources/videos/cover9.png" data-duration="00:34">
+                    <img src="img/Снимок экрана 2025-11-11 224036.png" class="video-thumb" alt="Пыль лежит">
+                    <div class="video-info">
+                        <div class="video-name">Пыль лежит</div>
+                        <div class="video-duration">00:34 | 6,30MB</div>
+                    </div>
+                </div>
+
+                <div class="video-item" data-video="resources/videos/v10.mp4" data-poster="resources/videos/cover10.png" data-duration="00:17">
+                    <img src="img/Снимок экрана 2025-11-11 224121.png" class="video-thumb" alt="Добрыня никитич">
+                    <div class="video-info">
+                        <div class="video-name">Добрыня никитич</div>
+                        <div class="video-duration">00:17 | 11,1MB</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="selector-controls">
+                <div class="selected-video" id="selectedVideoInfo">
+                    >_ ВЫБРАНО: 
+                </div>
+                <button class="load-btn" onclick="loadSelectedVideo()">
+                    ЗАГРУЗИТЬ →
+                </button>
+            </div>
+        </div>
+        
+        <!-- Видео-плеер -->
+        <div class="video-terminal" id="video-arh">
+            <div class="terminal-header">
+                <div class="terminal-title">MEDIA_PLAYER.EXE - <span id="currentFileName">Походка.MP4</span><div class="terminal-status">
+                    <div class="status-indicator" id="statusIndicator"></div>
+                    <span id="statusText">SYSTEM_STANDBY</span>
+                </div></div>
+               
+            </div>
+            
+            <div class="video-container">
+                <div class="video-placeholder" id="videoPlaceholder" onclick="initVideoPlayer()">
+                    <div class="placeholder-text">
+                        >_ ДЛЯ АКТИВАЦИИ ВИДЕОПЛЕЕРА<br>
+                        >_ НАЖМИТЕ ЛЮБУЮ КЛАВИШУ<br>
+                        >_ STATUS: READY_TO_PLAY
+                    </div>
+                </div>
+                <video class="video-player" id="videoPlayer" controls style="display: none;">
+                    <source src="first-video.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+            
+            <div class="terminal-controls">
+                <div class="control-buttons">
+                    <button class="ctrl-btn" onclick="playPause()" id="playBtn" disabled>▶ PLAY</button>
+                    <button class="ctrl-btn" onclick="stopVideo()" id="stopBtn" disabled>■ STOP</button>
+                    <button class="ctrl-btn" onclick="toggleMute()" id="muteBtn" disabled>🔊 MUTE</button>
+                    <button class="ctrl-btn" onclick="showVideoSelector()">📁 OPEN</button>
+                </div>
+                
+                <div class="progress-container" onclick="seekVideo(event)">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                
+                <div class="time-display" id="timeDisplay">00:00 / 00:00</div>
+                
+                <div class="volume-control">
+                    <span>VOL:</span>
+                    <div class="volume-slider" onclick="changeVolume(event)">
+                        <div class="volume-level" id="volumeLevel"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="terminal-footer">
+                <div class="file-info">
+                    <span>ФАЙЛ: <span id="fileInfoName">first-video.mp4</span></span>
+                    <span>РАЗМЕР: <span id="fileInfoSize">128MB</span></span>
+                    <span>ДАТА: <span id="fileInfoDate">2025-08-29</span></span>
+                    <span>ДЛИТЕЛЬНОСТЬ: <span id="fileInfoDuration">15:42</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    
+    <footer id="contacts">
+        <div class="footer-content">
+            <h3>Romka love♡</h3>
+            
+            <div class="social-links">
+                <a href="https://t.me/@eselant"><i class="fas fa-user"></i></a>
+                <a href="https://t.me/@eselant"><i class="fab fa-twitch"></i></a>
+
+            </div>
+            
+            
+            <p>Эта матричная вселенная была создана: eselant</p>
+<p>©Romka love 2025</p>
+        </div>
+    </footer>
+    
+    <!-- Иконки Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Matrix rain script -->
+    <script>
+        // Matrix rain effect
+        const canvas = document.getElementById('matrix');
+        const ctx = canvas.getContext('2d');
+        
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
+        const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const nums = '0123456789';
+        const symbols = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~';
+        
+        const alphabet = katakana + latin + nums + symbols;
+        
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        
+        const rainDrops = [];
+        
+        for (let x = 0; x < columns; x++) {
+            rainDrops[x] = 1;
+        }
+        
+        const draw = () => {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            ctx.fillStyle = '#00ff41';
+            ctx.font = fontSize + 'px monospace';
+            
+            for (let i = 0; i < rainDrops.length; i++) {
+                const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+                ctx.fillText(text, i * fontSize, rainDrops[i] * fontSize);
+                
+                if (rainDrops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    rainDrops[i] = 0;
+                }
+                rainDrops[i]++;
+            }
+        };
+        
+        setInterval(draw, 30);
+        
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        // Переменные для видеоплеера
+        const videoPlayer = document.getElementById('videoPlayer');
+        const videoPlaceholder = document.getElementById('videoPlaceholder');
+        const playBtn = document.getElementById('playBtn');
+        const stopBtn = document.getElementById('stopBtn');
+        const muteBtn = document.getElementById('muteBtn');
+        const progressBar = document.getElementById('progressBar');
+        const timeDisplay = document.getElementById('timeDisplay');
+        const volumeLevel = document.getElementById('volumeLevel');
+        const statusIndicator = document.getElementById('statusIndicator');
+        const statusText = document.getElementById('statusText');
+
+        // Инициализация видеоплеера
+        function initVideoPlayer() {
+            videoPlaceholder.style.display = 'none';
+            videoPlayer.style.display = 'block';
+            
+            // Активируем кнопки
+            playBtn.disabled = false;
+            stopBtn.disabled = false;
+            muteBtn.disabled = false;
+            
+            // Обновляем статус
+            statusIndicator.classList.add('active');
+            statusText.textContent = 'PLAYER_ACTIVE';
+            
+            // Запускаем обновление прогресса
+            videoPlayer.addEventListener('timeupdate', updateProgress);
+            videoPlayer.addEventListener('loadedmetadata', function() {
+                updateTimeDisplay();
+            });
+            
+            // Устанавливаем громкость
+            videoPlayer.volume = 1.0;
+            updateVolumeDisplay();
+        }
+
+        // Управление воспроизведением
+        function playPause() {
+            if (videoPlayer.paused) {
+                videoPlayer.play();
+                playBtn.textContent = '❚❚ PAUSE';
+            } else {
+                videoPlayer.pause();
+                playBtn.textContent = '▶ PLAY';
+            }
+        }
+
+        function stopVideo() {
+            videoPlayer.pause();
+            videoPlayer.currentTime = 0;
+            playBtn.textContent = '▶ PLAY';
+            updateProgress();
+        }
+
+        function toggleMute() {
+            videoPlayer.muted = !videoPlayer.muted;
+            muteBtn.textContent = videoPlayer.muted ? '🔇 UNMUTE' : '🔊 MUTE';
+        }
+
+        // Обновление прогресса
+        function updateProgress() {
+            const percent = (videoPlayer.currentTime / videoPlayer.duration) * 100;
+            progressBar.style.width = percent + '%';
+            updateTimeDisplay();
+        }
+
+        function updateTimeDisplay() {
+            const currentTime = formatTime(videoPlayer.currentTime);
+            const duration = formatTime(videoPlayer.duration);
+            timeDisplay.textContent = `${currentTime} / ${duration}`;
+        }
+
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        // Перемотка
+        function seekVideo(event) {
+            if (videoPlayer.duration) {
+                const progressContainer = event.currentTarget;
+                const clickPosition = event.offsetX;
+                const containerWidth = progressContainer.offsetWidth;
+                const seekTime = (clickPosition / containerWidth) * videoPlayer.duration;
+                videoPlayer.currentTime = seekTime;
+            }
+        }
+
+        // Управление громкостью
+        function changeVolume(event) {
+            const volumeSlider = event.currentTarget;
+            const clickPosition = event.offsetX;
+            const sliderWidth = volumeSlider.offsetWidth;
+            const volumeLevel = clickPosition / sliderWidth;
+            
+            videoPlayer.volume = volumeLevel;
+            updateVolumeDisplay();
+        }
+
+        function updateVolumeDisplay() {
+            volumeLevel.style.width = (videoPlayer.volume * 100) + '%';
+        }
+
+        // Глобальные обработчики клавиш
+        document.addEventListener('keydown', function(event) {
+            if (videoPlayer.style.display === 'block') {
+                switch(event.key) {
+                    case ' ':
+                        event.preventDefault();
+                        playPause();
+                        break;
+                    case 'm':
+                    case 'M':
+                        toggleMute();
+                        break;
+                    case 'ArrowLeft':
+                        videoPlayer.currentTime = Math.max(0, videoPlayer.currentTime - 10);
+                        break;
+                    case 'ArrowRight':
+                        videoPlayer.currentTime = Math.min(videoPlayer.duration, videoPlayer.currentTime + 10);
+                        break;
+                }
+            }
+        });
+
+        // Обработчики событий видео
+        videoPlayer.addEventListener('play', function() {
+            statusText.textContent = 'PLAYING';
+        });
+
+        videoPlayer.addEventListener('pause', function() {
+            statusText.textContent = 'PAUSED';
+        });
+
+        videoPlayer.addEventListener('ended', function() {
+            playBtn.textContent = '▶ PLAY';
+            statusText.textContent = 'PLAYBACK_COMPLETE';
+        });
+         // Переменные для системы выбора видео
+        let currentVideoData = {
+            src: 'first-video.mp4',
+            name: 'ПЕРВЫЙ_СТРИМ.mp4',
+            size: '128MB',
+            date: '2025-08-29',
+            duration: '15:42'
+        };
+
+        // Инициализация выбора видео
+        document.querySelectorAll('.video-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // Убираем активный класс у всех
+                document.querySelectorAll('.video-item').forEach(i => i.classList.remove('active'));
+                // Добавляем активный класс текущему
+                this.classList.add('active');
+                
+                // Обновляем информацию о выбранном видео
+                updateSelectedVideoInfo(this);
+            });
+        });
+
+        function updateSelectedVideoInfo(item) {
+            const videoName = item.querySelector('.video-name').textContent;
+            const videoDuration = item.querySelector('.video-duration').textContent;
+            
+            document.getElementById('selectedVideoInfo').textContent = `>_ ВЫБРАНО: ${videoName}`;
+            
+            // Сохраняем данные для загрузки
+            currentVideoData = {
+                src: item.getAttribute('data-video'),
+                name: videoName,
+                size: item.getAttribute('data-size') || videoDuration.split(' | ')[1],
+                date: item.getAttribute('data-date') || '2025-08-29',
+                duration: item.getAttribute('data-duration') || videoDuration.split(' | ')[0]
+            };
+        }
+
+        function loadSelectedVideo() {
+            const videoPlayer = document.getElementById('videoPlayer');
+            const videoPlaceholder = document.getElementById('videoPlaceholder');
+            
+            // Показываем индикатор загрузки
+            const loadBtn = document.querySelector('.load-btn');
+            const originalText = loadBtn.textContent;
+            loadBtn.textContent = 'ЗАГРУЗКА...';
+            loadBtn.classList.add('loading');
+            
+            // Останавливаем текущее видео
+            videoPlayer.pause();
+            videoPlayer.style.display = 'none';
+            videoPlaceholder.style.display = 'flex';
+            
+            // Обновляем источник видео
+            setTimeout(() => {
+                videoPlayer.querySelector('source').src = currentVideoData.src;
+                videoPlayer.load();
+                
+                // Обновляем информацию в плеере
+                document.getElementById('currentFileName').textContent = currentVideoData.name;
+                document.getElementById('fileInfoName').textContent = currentVideoData.name;
+                document.getElementById('fileInfoSize').textContent = currentVideoData.size;
+                document.getElementById('fileInfoDate').textContent = currentVideoData.date;
+                document.getElementById('fileInfoDuration').textContent = currentVideoData.duration;
+                
+                // Сбрасываем кнопки
+                loadBtn.textContent = originalText;
+                loadBtn.classList.remove('loading');
+                
+                // Обновляем статус
+                document.getElementById('statusText').textContent = 'VIDEO_LOADED';
+                
+            }, 1000);
+        }
+
+        // Функции для модального окна
+        function showVideoSelector() {
+            document.getElementById('videoSelectorModal').style.display = 'block';
+        }
+
+        function closeVideoSelector() {
+            document.getElementById('videoSelectorModal').style.display = 'none';
+        }
+
+        // Обработчики для модального окна
+        document.querySelectorAll('#videoSelectorModal .video-item').forEach(item => {
+            item.addEventListener('click', function() {
+                document.querySelectorAll('#videoSelectorModal .video-item').forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+                
+                const videoName = this.querySelector('.video-name').textContent;
+                document.getElementById('modalSelectedVideo').textContent = `>_ ВЫБРАНО: ${videoName}`;
+                document.getElementById('modalLoadBtn').disabled = false;
+                
+                // Сохраняем данные выбранного видео
+                currentVideoData = {
+                    src: this.getAttribute('data-video'),
+                    name: videoName,
+                    size: this.getAttribute('data-size'),
+                    date: this.getAttribute('data-date'),
+                    duration: this.getAttribute('data-duration')
+                };
+            });
+        });
+
+        function loadModalVideo() {
+            loadSelectedVideo();
+            closeVideoSelector();
+        }
+
+        // Закрытие модального окна по клику вне его
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('videoSelectorModal');
+            if (event.target === modal) {
+                closeVideoSelector();
+            }
+        });
+    </script>
+</body>
+</html>
